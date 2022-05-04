@@ -11,15 +11,19 @@
     <title>GRADE TIME!!!</title>
   </head>
   <body>
-      <h1>GRADE TIME!!!</h1>
-    <div class="text-box">
-      <label for="score">Score:</label>
+      <h1 class="">GRADE TIME!!!</h1>
+      <div class="row w-25 ">
+        <label for="score">Score:</label>
       <input type="text" id="stime">
-      <input type="button" value="calculate" class="btn" onclick="letterGrade()"/><br>
-      <hr width="300px">
-      <label for="grade">Grade:</label>
-      <input type="text" id="gtime"><br>
-    </div>
+      <input type="button" value="calculate" class="btn btn-danger" onclick="letterGrade()"/>
+      </div>
+      <div class="row w-25">
+        <label for="grade">Grade:</label>
+      <input type="text" id="gtime">
+      </div>
+    
+      
+   
 
 
     <script>
@@ -53,16 +57,6 @@
         document.querySelector('#gtime').value = grade
        
       }
-
-
-
-
-
-
-      // function percentage(){
-      //   let score = document.querySelector('gtime')
-      //   getGrade(score)
-      // } 
 
     </script>
 
